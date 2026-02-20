@@ -81,7 +81,7 @@ def parse_and_sort_timestamps(df: pd.DataFrame) -> pd.DataFrame:
     Parse datetime column, set as index, sort chronologically.
     """
     try:
-        df['datetime'] = pd.to_datetime(df['datetime'])
+        df['datetime'] = pd.to_datetime(df['datetime'], dayfirst=True)
     except Exception as e:
         raise ValueError(f"[TIAS] Failed to parse datetime column: {e}")
 
