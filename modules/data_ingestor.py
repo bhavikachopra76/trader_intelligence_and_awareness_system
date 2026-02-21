@@ -1,9 +1,6 @@
 import pandas as pd
-# import numpy as np
 import matplotlib.pyplot as plt
-# import matplotlib.dates as mdates
 import os
-# import sys
 from config import (
     REQUIRED_COLUMNS, TIMESTAMP_CANDIDATES,
     MAX_SINGLE_BAR_MOVE_PCT, MIN_PRICE,
