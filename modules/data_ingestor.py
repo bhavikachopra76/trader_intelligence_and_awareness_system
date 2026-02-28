@@ -82,7 +82,6 @@ def parse_and_sort_timestamps(df: pd.DataFrame) -> pd.DataFrame:
     except Exception as e:
         raise ValueError(f"[TIAS] Failed to parse datetime column: {e}")
 
-    # Check for unparseable timestamps
     null_ts = df['datetime'].isna().sum()
     if null_ts > 0:
         print(f"[TIAS] WARNING: {null_ts} rows with unparseable timestamps — dropping them.")
