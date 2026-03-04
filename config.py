@@ -7,7 +7,7 @@ TIMESTAMP_CANDIDATES = ['datetime', 'date', 'time', 'timestamp', 'Date', 'Dateti
 #Flag if any single bar moves more than 20%
 MAX_SINGLE_BAR_MOVE_PCT = 20.0
 
-#Prices below this are invalid
+#Invalid prices
 MIN_PRICE = 0.0001
 
 #Set True for indices/synthetic instruments
